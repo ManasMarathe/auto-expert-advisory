@@ -6,7 +6,7 @@ import { WhoAreWeData as data } from "@/utils/data";
 
 const WhoAreWe = () => {
   const { ref, isVisible } = useInView({ threshold: 0.3 });
-
+  console.log(isVisible);
   return (
     <section
       ref={ref}
