@@ -1,5 +1,10 @@
 import BaseLayout from "@/components/BaseLayout";
+import CoreServices from "@/components/CoreServices";
+import Feedback from "@/components/Feedback";
+import GetInTouch from "@/components/GetInTouch";
 import Hero from "@/components/Hero";
+import KeyBenefits from "@/components/KeyBenefits";
+import Membership from "@/components/Membership";
 import WhoAreWe from "@/components/WhoAreWe";
 
 export default function Home() {
@@ -8,6 +13,11 @@ export default function Home() {
       <BaseLayout>
         <Hero />
         <WhoAreWe />
+        <CoreServices />
+        <KeyBenefits />
+        <Membership />
+        <Feedback />
+        <GetInTouch />
       </BaseLayout>
     </div>
   );

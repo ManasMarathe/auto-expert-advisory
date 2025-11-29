@@ -1,34 +1,55 @@
+"use client";
+
+import useInView from "@/hooks/useInView";
 import Image from "next/image";
-import React from "react";
+import { WhoAreWeData as data } from "@/utils/data";
 
 const WhoAreWe = () => {
-  const data = {
-    title: "Who are we?",
-    para1:
-      "A-Cars Advisory is a premier automotive service advisory firm specializing in providing comprehensive solutions for luxury car owners.",
-    para2:
-      "With 30 years of experience, we are a trusted name in ensuring hassle-free maintenance and servicing for high-end vehicles.",
-    para3:
-      "Our services are designed to save our customers time, money, and effort while ensuring their vehicles remain in peak condition.",
-    buttonText: "Get In Touch",
-  };
+  const { ref, isVisible } = useInView({ threshold: 0.3 });
+
   return (
-    <section className="bg-[#f4f1ec] px-8">
-      <div className="max-w-[--container-max-width] mx-auto py-12 flex items-center text-[#66231b]">
-        <div className="w-[60%]">
-          <h2 className="text-5xl font-bold my-10">{data.title}</h2>
-          <div className="mt-4 flex flex-col items-center gap-6 text-2xl max-w-[80%]">
+    <section
+      ref={ref}
+      className={`bg-[#f4f1ec] px-4 sm:p-16 
+        
+      `}
+    >
+      <div
+        className={`max-w-[--container-max-width] mx-auto py-12 flex flex-col lg:flex-row items-center lg:items-start text-[#66231b] ${
+          isVisible
+            ? "animate__animated animate__fadeInUp animate__delay-0.8s"
+            : "opacity-0"
+        }`}
+      >
+        <div className={`w-full lg:w-7/12 `}>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold my-6 lg:my-10 text-center lg:text-left">
+            {data.title}
+          </h2>
+
+          <div className="mt-4 flex flex-col items-center lg:items-start gap-6 text-lg sm:text-xl lg:text-2xl max-w-[90%] lg:max-w-[80%] mx-auto lg:mx-0">
             <p>{data.para1}</p>
             <p>{data.para2}</p>
             <p>{data.para3}</p>
           </div>
         </div>
-        <div className="w-[40%]">
+
+        <div
+          className={`w-full lg:w-5/12 mt-10 lg:mt-0 flex flex-col items-center ${
+            isVisible ? "animate__animated animate__fadeInUp " : "opacity-0"
+          }`}
+        >
           <div className="grid place-content-center">
-            <Image src="/30-years.webp" alt="Team" width={430} height={430} />
+            <Image
+              src="/output5.webp"
+              alt="Team"
+              width={430}
+              height={430}
+              className="w-64 sm:w-80 lg:w-[430px] h-auto"
+            />
           </div>
-          <div className="flex justify-center mt-4">
-            <button className="bg-[#cdad7d] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#b8946b] transition-colors duration-300">
+
+          <div className="mt-6">
+            <button className="bg-[#cdad7d] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#b8946b] transition-colors duration-300 cursor-pointer">
               {data.buttonText}
             </button>
           </div>

@@ -8,7 +8,7 @@ const BaseLayout = ({ children }: { children: React.ReactNode }) => {
     <div className="min-h-screen flex flex-col">
       <Header />
       <main className="grow">{children}</main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
