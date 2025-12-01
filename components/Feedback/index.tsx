@@ -41,22 +41,19 @@ const Feedback = () => {
         <div className="flex flex-col md:flex-row flex-wrap gap-6 justify-center mt-18 items-center">
           <div className="grid place-content-center border-[#cdad7d] border-2 p-4 w-[300px] h-[300px] rounded-lg">
             <video controls className="w-[300px]  rounded-lg">
-              <source src="/demo.mp4" type="video/mp4" />
-              <source src="/demo.webm" type="video/webm" />
+              <source src="/VID-2.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
           <div className="grid place-content-center border-[#cdad7d] border-2 p-4 w-[300px] h-[300px] rounded-lg">
             <video controls className="w-[300px]  rounded-lg">
-              <source src="/demo.mp4" type="video/mp4" />
-              <source src="/demo.webm" type="video/webm" />
+              <source src="/VID-(1).mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
           <div className="grid place-content-center border-[#cdad7d] border-2 p-4 w-[300px] h-[300px] rounded-lg">
-            <video controls className="w-[300px]  rounded-lg">
-              <source src="/demo.mp4" type="video/mp4" />
-              <source src="/demo.webm" type="video/webm" />
+            <video controls className="w-[300px] rounded-lg h-[300px] mb-9">
+              <source src="VID-3.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>
