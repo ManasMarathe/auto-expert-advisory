@@ -2,6 +2,7 @@
 import React from "react";
 import Header from "../Header";
 import Footer from "../Footer";
+import GetInTouch from "../GetInTouch";
 
 const BaseLayout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -9,6 +10,7 @@ const BaseLayout = ({ children }: { children: React.ReactNode }) => {
       <Header />
       <main className="grow">{children}</main>
       {/* <Footer /> */}
+      <GetInTouch />
     </div>
   );
 };

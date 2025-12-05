@@ -106,6 +106,19 @@ const GetInTouchData = {
   closed: "Closed on Sundays",
 };
 
+const AboutUsData = {
+  title: "About Us",
+  para1:
+    "Welcome to A-Cars Advisory, a leading automotive service advisory firm dedicated to supporting luxury car owners with expert guidance, seamless maintenance solutions, and trusted industry knowledge. With over 30 years of hands-on experience, we have built a reputation as the go-to partner for anyone seeking reliable, transparent, and premium care for high-end vehicles.",
+  para2:
+    "At A-Cars Advisory, we understand that owning a luxury car is more than just transportation—it's an investment, a passion, and a lifestyle. That’s why our services are designed to simplify every aspect of vehicle care, from scheduled maintenance and performance diagnostics to cost-effective service planning and expert workshop coordination. We ensure your vehicle receives the highest standard of attention while saving you valuable time, money, and effort.",
+  para3:
+    "Our seasoned advisors work closely with certified service centers and automotive specialists, ensuring each car is maintained to manufacturer standards. Whether you own a Mercedes-Benz, BMW, Audi, Porsche, Land Rover, or any other premium brand, our mission is to keep your vehicle performing at its best—efficiently, affordably, and without hassle.",
+  para4:
+    "With three decades of experience, an unwavering commitment to customer satisfaction, and a deep understanding of the luxury automotive market, A-Cars Advisory stands at the forefront of trusted automotive service management.",
+  para5: "We don’t just guide maintenance—we elevate the ownership experience.",
+};
+
 export {
   HeroData,
   WhoAreWeData,
@@ -114,4 +127,5 @@ export {
   MembershipData,
   FeedbackData,
   GetInTouchData,
+  AboutUsData,
 };

@@ -17,7 +17,6 @@ export default function Home() {
         <KeyBenefits />
         <Membership />
         <Feedback />
-        <GetInTouch />
       </BaseLayout>
     </div>
   );
