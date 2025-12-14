@@ -12,6 +12,7 @@ import Image from "next/image";
 import React from "react";
 import { orbitron, questrial, quicksand } from "@/utils/fonts";
 import { GetInTouchData as data } from "@/utils/data";
+import Link from "next/link";
 
 const GetInTouch = () => {
   const { ref, isVisible } = useInView({ threshold: 0.3 });
@@ -72,7 +73,12 @@ const GetInTouch = () => {
           {data.title3}
         </h3>
         <div className="flex gap-4 mt-2">
-          <InstagramLogoIcon size={30} color="#cdad7d" weight="light" />
+          <Link
+            href="https://www.instagram.com/p/DCrbQfqiR8j/?igsh=ZGN4aWhoZ3Njamxn"
+            target="_blank"
+          >
+            <InstagramLogoIcon size={30} color="#cdad7d" weight="light" />
+          </Link>
           <LinkedinLogoIcon size={30} color="#cdad7d" weight="light" />
         </div>
       </div>

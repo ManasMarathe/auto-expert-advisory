@@ -3,6 +3,7 @@
 import useInView from "@/hooks/useInView";
 import Image from "next/image";
 import { WhoAreWeData as data } from "@/utils/data";
+import Link from "next/link";
 
 const WhoAreWe = () => {
   const { ref, isVisible } = useInView({ threshold: 0.3 });
@@ -48,9 +49,12 @@ const WhoAreWe = () => {
           </div>
 
           <div className="mt-6">
-            <button className="bg-[#cdad7d] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#b8946b] transition-colors duration-300 cursor-pointer">
+            <Link
+              href="mailto:jigneshjhaveriofficial@gmail.com"
+              className="bg-[#cdad7d] text-white px-6 py-3 rounded-lg font-semibold hover:bg-[#b8946b] transition-colors duration-300 cursor-pointer"
+            >
               {data.buttonText}
-            </button>
+            </Link>
           </div>
         </div>
       </div>
