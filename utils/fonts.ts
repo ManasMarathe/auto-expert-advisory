@@ -5,6 +5,7 @@ import {
   Montserrat,
   Questrial,
   Orbitron,
+  Space_Grotesk,
 } from "next/font/google";
 
 const geistSans = Geist({
@@ -39,4 +40,18 @@ const orbitron = Orbitron({
   weight: ["400", "500", "600", "700"],
 });
 
-export { geistSans, geistMono, montserrat, quicksand, questrial, orbitron };
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+export {
+  geistSans,
+  geistMono,
+  montserrat,
+  quicksand,
+  questrial,
+  orbitron,
+  spaceGrotesk,
+};
